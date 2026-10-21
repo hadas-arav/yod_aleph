@@ -19,25 +19,24 @@
         android:gravity="center"
         android:text="משפחת ביבס"
         android:textColor="#000000"
-        android:textSize="40sp" />
+        android:textSize="50sp" />
 
     <TextView
         android:id="@+id/descriptionText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="110dp"
         android:layout_marginTop="24dp"
         android:gravity="center"
         android:text="נחטפו מביתם בקיבוץ ניר עוז ירדן ושירי ביבס ושני ילדיהם, אריאל בן ה־4 וכפיר בן תשעת החודשים בלבד. ירדן שוחרר לאחר 484 ימים בשבי, שירי, אריאל וכפיר נרצחו בשבי."
         android:textAlignment="center"
         android:textColor="#000000"
         android:textDirection="rtl"
-        android:textSize="16sp" />
+        android:textSize="23sp" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="366dp"
+        android:layout_height="636dp"
         app:srcCompat="@drawable/bibas" />
 
 </LinearLayout>
- כ
