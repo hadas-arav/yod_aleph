@@ -1,42 +1,59 @@
-
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF3C5"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="@android:color/holo_blue_dark"
+    android:layoutDirection="rtl">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/titleText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="35dp"
         android:gravity="center"
-        android:text="משפחת ביבס"
-        android:textColor="#000000"
-        android:textSize="50sp" />
+        android:text="ישראלים"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="320dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/israelflag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+    <TextView
+        android:id="@+id/sectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="איך זה להיות ישראלי?"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
 
     <TextView
         android:id="@+id/descriptionText"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="נחטפו מביתם בקיבוץ ניר עוז ירדן ושירי ביבס ושני ילדיהם, אריאל בן ה־4 וכפיר בן תשעת החודשים בלבד. ירדן שוחרר לאחר 484 ימים בשבי, שירי, אריאל וכפיר נרצחו בשבי."
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textDirection="rtl"
-        android:textSize="23sp" />
+        android:lineSpacingExtra="8dp"
+        android:text="למרות שלפעמים זה קשה בגלל כל הקונפליקטים במדינה, אני עדיין חושבת שלהיות ישראלית זה דבר חיובי בגלל שהעם שלנו תמיד מאוחד ותמיד אחד בשביל השני ותמיד באווירה של אחדות "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sectionTitle" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="636dp"
-        app:srcCompat="@drawable/bibas" />
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
